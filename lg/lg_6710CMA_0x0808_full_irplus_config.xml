@@ -1,0 +1,261 @@
+<?xml version="1.0" ?>
+<irplus>
+  <device bits="16" columns="4" format="WINLIRC_SPACEENC" gap-pulse="583" gap-space="106945" header-pulse="4498" header-space="4453" manufacturer="LG" model="reverse_config_0x0808" one-pulse="582" one-space="1636" pre-bits="16" toggle-bit-pos="0" zero-pulse="582" zero-space="536">
+    <button label=" 0  0" span="1">0x808 0x00ff</button>
+    <button label=" 0  1" span="1">0x808 0x807f</button>
+    <button label=" 0  2" span="1">0x808 0x40bf</button>
+    <button label="KEY_CD" span="1">0x808 0xc03f</button>
+    <button label="CD_PLAYPAUSE" span="1">0x808 0x20df</button>
+    <button label="CD_STOP" span="1">0x808 0xa05f</button>
+    <button label="CD_PREVIOUS" span="1">0x808 0x609f</button>
+    <button label="CD_NEXT" span="1">0x808 0xe01f</button>
+    <button label="KEY_TAPE" span="1">0x808 0x10ef</button>
+    <button label="KEY_AUX" span="1">0x808 0x906f</button>
+    <button label=" 0 10" span="1">0x808 0x50af</button>
+    <button label=" 0 11" span="1">0x808 0xd02f</button>
+    <button label="DECK_PLAY_BACKWARD" span="1">0x808 0x30cf</button>
+    <button label="DECK_PLAY" span="1">0x808 0xb04f</button>
+    <button label="DECK_STOP" span="1">0x808 0x708f</button>
+    <button label=" 0 15" span="1">0x808 0xf00f</button>
+    <button label="DECK_REWIND" span="1">0x808 0x08f7</button>
+    <button label="DECK_FASTFORWARD" span="1">0x808 0x8877</button>
+    <button label="KEY_CHANNELDOWN" span="1">0x808 0x48b7</button>
+    <button label="KEY_CHANNELUP" span="1">0x808 0xc837</button>
+    <button label=" 1  4" span="1">0x808 0x28d7</button>
+    <button label="DECK_RECORD" span="1">0x808 0xa857</button>
+    <button label="KEY_VOLUMEDOWN" span="1">0x808 0x6897</button>
+    <button label="KEY_VOLUMEUP" span="1">0x808 0xe817</button>
+    <button label=" 1  8" span="1">0x808 0x18e7</button>
+    <button label=" 1  9" span="1">0x808 0x9867</button>
+    <button label=" 1 10" span="1">0x808 0x58a7</button>
+    <button label=" 1 11" span="1">0x808 0xd827</button>
+    <button label=" 1 12" span="1">0x808 0x38c7</button>
+    <button label="XDSS" span="1">0x808 0xb847</button>
+    <button label="KEY_POWER" span="1">0x808 0x7887</button>
+    <button label="KEY_MUTE" span="1">0x808 0xf807</button>
+    <button label=" 2  0" span="1">0x808 0x04fb</button>
+    <button label=" 2  1" span="1">0x808 0x847b</button>
+    <button label=" 2  2" span="1">0x808 0x44bb</button>
+    <button label=" 2  3" span="1">0x808 0xc43b</button>
+    <button label=" 2  4" span="1">0x808 0x24db</button>
+    <button label=" 2  5" span="1">0x808 0xa45b</button>
+    <button label=" 2  6" span="1">0x808 0x649b</button>
+    <button label=" 2  7" span="1">0x808 0xe41b</button>
+    <button label=" 2  8" span="1">0x808 0x14eb</button>
+    <button label=" 2  9" span="1">0x808 0x946b</button>
+    <button label=" 2 10" span="1">0x808 0x54ab</button>
+    <button label=" 2 11" span="1">0x808 0xd42b</button>
+    <button label=" 2 12" span="1">0x808 0x34cb</button>
+    <button label=" 2 13" span="1">0x808 0xb44b</button>
+    <button label=" 2 14" span="1">0x808 0x748b</button>
+    <button label=" 2 15" span="1">0x808 0xf40b</button>
+    <button label=" 3  0" span="1">0x808 0x0cf3</button>
+    <button label=" 3  1" span="1">0x808 0x8c73</button>
+    <button label=" 3  2" span="1">0x808 0x4cb3</button>
+    <button label=" 3  3" span="1">0x808 0xcc33</button>
+    <button label=" 3  4" span="1">0x808 0x2cd3</button>
+    <button label=" 3  5" span="1">0x808 0xac53</button>
+    <button label=" 3  6" span="1">0x808 0x6c93</button>
+    <button label=" 3  7" span="1">0x808 0xec13</button>
+    <button label=" 3  8" span="1">0x808 0x1ce3</button>
+    <button label="? KEY_PTY_SEARCH" span="1">0x808 0x9c63</button>
+    <button label="OAO" span="1">0x808 0x5ca3</button>
+    <button label="? KEY_USB" span="1">0x808 0xdc23</button>
+    <button label=" 3 12" span="1">0x808 0x3cc3</button>
+    <button label=" 3 13" span="1">0x808 0xbc43</button>
+    <button label=" 3 14" span="1">0x808 0x7c83</button>
+    <button label=" 3 15" span="1">0x808 0xfc03</button>
+    <button label="EQ_PATTERN" span="1">0x808 0x02fd</button>
+    <button label="KEY_1" span="1">0x808 0x827d</button>
+    <button label="KEY_2" span="1">0x808 0x42bd</button>
+    <button label="KEY_3" span="1">0x808 0xc23d</button>
+    <button label="KEY_4" span="1">0x808 0x22dd</button>
+    <button label="KEY_5" span="1">0x808 0xa25d</button>
+    <button label="KEY_6" span="1">0x808 0x629d</button>
+    <button label="KEY_7" span="1">0x808 0xe21d</button>
+    <button label="KEY_8" span="1">0x808 0x12ed</button>
+    <button label="KEY_9" span="1">0x808 0x926d</button>
+    <button label="? KEY_DSKIP" span="1">0x808 0x52ad</button>
+    <button label="KEY_0" span="1">0x808 0xd22d</button>
+    <button label=" 4 12" span="1">0x808 0x32cd</button>
+    <button label="CD_PROGRAM" span="1">0x808 0xb24d</button>
+    <button label="CD_REPEAT" span="1">0x808 0x728d</button>
+    <button label=" 4 15" span="1">0x808 0xf20d</button>
+    <button label="? KEY_SHUFFLE" span="1">0x808 0x0af5</button>
+    <button label=" 5  1" span="1">0x808 0x8a75</button>
+    <button label=" 5  2" span="1">0x808 0x4ab5</button>
+    <button label=" 5  3" span="1">0x808 0xca35</button>
+    <button label=" 5  4" span="1">0x808 0x2ad5</button>
+    <button label=" 5  5" span="1">0x808 0xaa55</button>
+    <button label=" 5  6" span="1">0x808 0x6a95</button>
+    <button label=" 5  7" span="1">0x808 0xea15</button>
+    <button label=" 5  8" span="1">0x808 0x1ae5</button>
+    <button label="KEY_TUNER" span="1">0x808 0x9a65</button>
+    <button label=" 5 10" span="1">0x808 0x5aa5</button>
+    <button label=" 5 11" span="1">0x808 0xda25</button>
+    <button label=" 5 12" span="1">0x808 0x3ac5</button>
+    <button label=" 5 13" span="1">0x808 0xba45</button>
+    <button label=" 5 14" span="1">0x808 0x7a85</button>
+    <button label=" 5 15" span="1">0x808 0xfa05</button>
+    <button label="? KEY_RDS" span="1">0x808 0x06f9</button>
+    <button label=" 6  1" span="1">0x808 0x8679</button>
+    <button label=" 6  2" span="1">0x808 0x46b9</button>
+    <button label=" 6  3" span="1">0x808 0xc639</button>
+    <button label=" 6  4" span="1">0x808 0x26d9</button>
+    <button label=" 6  5" span="1">0x808 0xa659</button>
+    <button label=" 6  6" span="1">0x808 0x6699</button>
+    <button label=" 6  7" span="1">0x808 0xe619</button>
+    <button label=" 6  8" span="1">0x808 0x16e9</button>
+    <button label=" 6  9" span="1">0x808 0x9669</button>
+    <button label=" 6 10" span="1">0x808 0x56a9</button>
+    <button label=" 6 11" span="1">0x808 0xd629</button>
+    <button label=" 6 12" span="1">0x808 0x36c9</button>
+    <button label=" 6 13" span="1">0x808 0xb649</button>
+    <button label=" 6 14" span="1">0x808 0x7689</button>
+    <button label=" 6 15" span="1">0x808 0xf609</button>
+    <button label=" 7  0" span="1">0x808 0x0ef1</button>
+    <button label="? KEY_PTY" span="1">0x808 0x8e71</button>
+    <button label=" 7  2" span="1">0x808 0x4eb1</button>
+    <button label=" 7  3" span="1">0x808 0xce31</button>
+    <button label=" 7  4" span="1">0x808 0x2ed1</button>
+    <button label=" 7  5" span="1">0x808 0xae51</button>
+    <button label=" 7  6" span="1">0x808 0x6e91</button>
+    <button label="KEY_INFO" span="1">0x808 0xee11</button>
+    <button label=" 7  8" span="1">0x808 0x1ee1</button>
+    <button label=" 7  9" span="1">0x808 0x9e61</button>
+    <button label=" 7 10" span="1">0x808 0x5ea1</button>
+    <button label=" 7 11" span="1">0x808 0xde21</button>
+    <button label=" 7 12" span="1">0x808 0x3ec1</button>
+    <button label=" 7 13" span="1">0x808 0xbe41</button>
+    <button label=" 7 14" span="1">0x808 0x7e81</button>
+    <button label=" 7 15" span="1">0x808 0xfe01</button>
+    <button label=" 8  0" span="1">0x808 0x01fe</button>
+    <button label=" 8  1" span="1">0x808 0x817e</button>
+    <button label=" 8  2" span="1">0x808 0x41be</button>
+    <button label=" 8  3" span="1">0x808 0xc13e</button>
+    <button label=" 8  4" span="1">0x808 0x21de</button>
+    <button label=" 8  5" span="1">0x808 0xa15e</button>
+    <button label=" 8  6" span="1">0x808 0x619e</button>
+    <button label=" 8  7" span="1">0x808 0xe11e</button>
+    <button label=" 8  8" span="1">0x808 0x11ee</button>
+    <button label=" 8  9" span="1">0x808 0x916e</button>
+    <button label=" 8 10" span="1">0x808 0x51ae</button>
+    <button label=" 8 11" span="1">0x808 0xd12e</button>
+    <button label=" 8 12" span="1">0x808 0x31ce</button>
+    <button label=" 8 13" span="1">0x808 0xb14e</button>
+    <button label=" 8 14" span="1">0x808 0x718e</button>
+    <button label="SURROUND" span="1">0x808 0xf10e</button>
+    <button label=" 9  0" span="1">0x808 0x09f6</button>
+    <button label=" 9  1" span="1">0x808 0x8976</button>
+    <button label=" 9  2" span="1">0x808 0x49b6</button>
+    <button label=" 9  3" span="1">0x808 0xc936</button>
+    <button label=" 9  4" span="1">0x808 0x29d6</button>
+    <button label=" 9  5" span="1">0x808 0xa956</button>
+    <button label=" 9  6" span="1">0x808 0x6996</button>
+    <button label=" 9  7" span="1">0x808 0xe916</button>
+    <button label=" 9  8" span="1">0x808 0x19e6</button>
+    <button label=" 9  9" span="1">0x808 0x9966</button>
+    <button label=" 9 10" span="1">0x808 0x59a6</button>
+    <button label=" 9 11" span="1">0x808 0xd926</button>
+    <button label=" 9 12" span="1">0x808 0x39c6</button>
+    <button label=" 9 13" span="1">0x808 0xb946</button>
+    <button label=" 9 14" span="1">0x808 0x7986</button>
+    <button label="? KEY_MODE" span="1">0x808 0xf906</button>
+    <button label="10  0" span="1">0x808 0x05fa</button>
+    <button label="10  1" span="1">0x808 0x857a</button>
+    <button label="10  2" span="1">0x808 0x45ba</button>
+    <button label="10  3" span="1">0x808 0xc53a</button>
+    <button label="10  4" span="1">0x808 0x25da</button>
+    <button label="10  5" span="1">0x808 0xa55a</button>
+    <button label="10  6" span="1">0x808 0x659a</button>
+    <button label="10  7" span="1">0x808 0xe51a</button>
+    <button label="10  8" span="1">0x808 0x15ea</button>
+    <button label="10  9" span="1">0x808 0x956a</button>
+    <button label="10 10" span="1">0x808 0x55aa</button>
+    <button label="10 11" span="1">0x808 0xd52a</button>
+    <button label="10 12" span="1">0x808 0x35ca</button>
+    <button label="10 13" span="1">0x808 0xb54a</button>
+    <button label="10 14" span="1">0x808 0x758a</button>
+    <button label="10 15" span="1">0x808 0xf50a</button>
+    <button label="11  0" span="1">0x808 0x0df2</button>
+    <button label="11  1" span="1">0x808 0x8d72</button>
+    <button label="11  2" span="1">0x808 0x4db2</button>
+    <button label="11  3" span="1">0x808 0xcd32</button>
+    <button label="11  4" span="1">0x808 0x2dd2</button>
+    <button label="11  5" span="1">0x808 0xad52</button>
+    <button label="11  6" span="1">0x808 0x6d92</button>
+    <button label="11  7" span="1">0x808 0xed12</button>
+    <button label="11  8" span="1">0x808 0x1de2</button>
+    <button label="11  9" span="1">0x808 0x9d62</button>
+    <button label="11 10" span="1">0x808 0x5da2</button>
+    <button label="11 11" span="1">0x808 0xdd22</button>
+    <button label="11 12" span="1">0x808 0x3dc2</button>
+    <button label="11 13" span="1">0x808 0xbd42</button>
+    <button label="11 14" span="1">0x808 0x7d82</button>
+    <button label="? KEY_XTS_PRO" span="1">0x808 0xfd02</button>
+    <button label="12  0" span="1">0x808 0x03fc</button>
+    <button label="? KEY_CLOCK" span="1">0x808 0x837c</button>
+    <button label="KEY_SLEEP" span="1">0x808 0x43bc</button>
+    <button label="12  3" span="1">0x808 0xc33c</button>
+    <button label="12  4" span="1">0x808 0x23dc</button>
+    <button label="12  5" span="1">0x808 0xa35c</button>
+    <button label="12  6" span="1">0x808 0x639c</button>
+    <button label="12  7" span="1">0x808 0xe31c</button>
+    <button label="12  8" span="1">0x808 0x13ec</button>
+    <button label="12  9" span="1">0x808 0x936c</button>
+    <button label="12 10" span="1">0x808 0x53ac</button>
+    <button label="12 11" span="1">0x808 0xd32c</button>
+    <button label="? KEY_FUNCTION" span="1">0x808 0x33cc</button>
+    <button label="12 13" span="1">0x808 0xb34c</button>
+    <button label="12 14" span="1">0x808 0x738c</button>
+    <button label="12 15" span="1">0x808 0xf30c</button>
+    <button label="13  0" span="1">0x808 0x0bf4</button>
+    <button label="13  1" span="1">0x808 0x8b74</button>
+    <button label="13  2" span="1">0x808 0x4bb4</button>
+    <button label="13  3" span="1">0x808 0xcb34</button>
+    <button label="13  4" span="1">0x808 0x2bd4</button>
+    <button label="13  5" span="1">0x808 0xab54</button>
+    <button label="13  6" span="1">0x808 0x6b94</button>
+    <button label="13  7" span="1">0x808 0xeb14</button>
+    <button label="13  8" span="1">0x808 0x1be4</button>
+    <button label="13  9" span="1">0x808 0x9b64</button>
+    <button label="13 10" span="1">0x808 0x5ba4</button>
+    <button label="13 11" span="1">0x808 0xdb24</button>
+    <button label="13 12" span="1">0x808 0x3bc4</button>
+    <button label="13 13" span="1">0x808 0xbb44</button>
+    <button label="13 14" span="1">0x808 0x7b84</button>
+    <button label="13 15" span="1">0x808 0xfb04</button>
+    <button label="14  0" span="1">0x808 0x07f8</button>
+    <button label="14  1" span="1">0x808 0x8778</button>
+    <button label="14  2" span="1">0x808 0x47b8</button>
+    <button label="14  3" span="1">0x808 0xc738</button>
+    <button label="14  4" span="1">0x808 0x27d8</button>
+    <button label="14  5" span="1">0x808 0xa758</button>
+    <button label="14  6" span="1">0x808 0x6798</button>
+    <button label="14  7" span="1">0x808 0xe718</button>
+    <button label="14  8" span="1">0x808 0x17e8</button>
+    <button label="14  9" span="1">0x808 0x9768</button>
+    <button label="14 10" span="1">0x808 0x57a8</button>
+    <button label="14 11" span="1">0x808 0xd728</button>
+    <button label="14 12" span="1">0x808 0x37c8</button>
+    <button label="14 13" span="1">0x808 0xb748</button>
+    <button label="14 14" span="1">0x808 0x7788</button>
+    <button label="14 15" span="1">0x808 0xf708</button>
+    <button label="15  0" span="1">0x808 0x0ff0</button>
+    <button label="15  1" span="1">0x808 0x8f70</button>
+    <button label="15  2" span="1">0x808 0x4fb0</button>
+    <button label="15  3" span="1">0x808 0xcf30</button>
+    <button label="15  4" span="1">0x808 0x2fd0</button>
+    <button label="15  5" span="1">0x808 0xaf50</button>
+    <button label="15  6" span="1">0x808 0x6f90</button>
+    <button label="15  7" span="1">0x808 0xef10</button>
+    <button label="15  8" span="1">0x808 0x1fe0</button>
+    <button label="15  9" span="1">0x808 0x9f60</button>
+    <button label="15 10" span="1">0x808 0x5fa0</button>
+    <button label="15 11" span="1">0x808 0xdf20</button>
+    <button label="15 12" span="1">0x808 0x3fc0</button>
+    <button label="15 13" span="1">0x808 0xbf40</button>
+    <button label="15 14" span="1">0x808 0x7f80</button>
+    <button label="15 15" span="1">0x808 0xff00</button>
+  </device>
+</irplus>

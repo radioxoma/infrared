@@ -1,0 +1,40 @@
+<irplus>
+    <device manufacturer="LG" model="6710CMAP01A" columns="12" format="WINLIRC_SPACEENC" bits="16" pre-bits="16" toggle-bit-pos="0" gap-pulse="583" gap-space="106945" one-pulse="582" one-space="1636" zero-pulse="582" zero-space="536" header-pulse="4498" header-space="4453">
+        <button span="4" label="&#xf011;" alt="POWER" backgroundColor="FFFF4242">0x808 0x7887</button>
+        <button span="4" label="CHANNELUP">0x808 0xC837</button>
+        <button span="4" label="VOLUMEUP">0x808 0xE817</button>
+        <button span="4" label="MUTE">0x808 0xF807</button>
+        <button span="4" label="CHANNELDOWN">0x808 0x48B7</button>
+        <button span="4" label="VOLUMEDOWN">0x808 0x6897</button>
+        <button span="4" label="SLEEP">0x808 0x43BC</button>
+        <button span="4" label="TUNER">0x808 0x9A65</button>
+        <button span="4" label="AUX">0x808 0x906F</button>
+        <button span="4" label="CD_PLAYPAUSE">0x808 0x20DF</button>
+        <button span="4" label="CD_PREVIOUS">0x808 0x609F</button>
+        <button span="4" label="CD_STOP">0x808 0xA05F</button>
+        <button span="4" label="CD_NEXT">0x808 0xE01F</button>
+        <button span="4" label="CD_REPEAT">0x808 0x728D</button>
+        <button span="4" label="CD_PROGRAM">0x808 0xB24D</button>
+        <button span="4" label="DECK_PLAY_BACKWARD">0x808 0x30CF</button>
+        <button span="4" label="DECK_PLAY">0x808 0xB04F</button>
+        <button span="4" label="DECK_REWIND">0x808 0x08F7</button>
+        <button span="4" label="DECK_FASTFORWARD">0x808 0x8877</button>
+        <button span="4" label="DECK_RECORD">0x808 0xA857</button>
+        <button span="4" label="DECK_STOP">0x808 0x708F</button>
+        <button span="4" label="EQ_PATTERN">0x808 0x02FD</button>
+        <button span="4" label="XDSS">0x808 0xB847</button>
+        <button span="4" label="SURROUND">0x808 0xF10E</button>
+        <button span="4" label="OAO">0x808 0x5CA3</button>
+        <button span="4" label="INFO">0x808 0xEE11</button>
+        <button span="4" label="0">0x808 0xD22D</button>
+        <button span="4" label="1">0x808 0x827D</button>
+        <button span="4" label="2">0x808 0x42BD</button>
+        <button span="4" label="3">0x808 0xC23D</button>
+        <button span="4" label="4">0x808 0x22DD</button>
+        <button span="4" label="5">0x808 0xA25D</button>
+        <button span="4" label="6">0x808 0x629D</button>
+        <button span="4" label="7">0x808 0xE21D</button>
+        <button span="4" label="8">0x808 0x12ED</button>
+        <button span="4" label="9">0x808 0x926D</button>
+    </device>
+</irplus>
