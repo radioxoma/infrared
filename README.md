@@ -33,7 +33,7 @@ Clickbait table for Google. Why restrict yourself with an specific remote, if yo
 | `6710CMAM11B` | ?                | ?          |                          |
 | `6710CMAM12A` | ?                | ?          |                          |
 | `6710CMAP01A` | Yes, this repo   | 36 buttons | "Original remote". LX-M240, LX-M245 |
-| `6710CMAQ01A` | ?                | ?          | "Original remote"        |
+| `6710CMAQ01A` | ?                | 43 buttons | "Original remote". Most complete remote |
 | `6710CMAQ02A` | ?                | ?          |                          |
 | `6710CMAQ05B` | ?                | ?          |                          |
 | `6710CMAQ05F` | Yes [[1](https://sourceforge.net/p/lirc/mailman/message/32481685/)] | 37 buttons | FA162 series, FA162A series |
