@@ -15,9 +15,22 @@ Facts:
 
 | Model         | Config published | Buttons | Comment |
 | :-----------: | :--------------: | --------| ------- |
+| `6710CMAM01A` | ?                | ?       |         |
+| `6710CMAM03B` | ?                | ?       |         |
+| `6710CMAM03D` | ?                | ?       |         |
+| `6710CMAM06A` | ?                | ?       |         |
+| `6710CMAM07A` | ?                | ?       |         |
+| `6710CMAM08D` | ?                | ?       |         |
 | `6710CMAM09D` | Yes [[1](https://sourceforge.net/p/lirc-remotes/mailman/attachment/90994684-d38f-ce19-6adf-27f4d021467e%40gmail.com/1/), [2](https://gist.github.com/besi/9aa3efe5a5def151420fdfacba21302a)] | 28 buttons | |
+| `6710CMAM11A` | ?                | ?       |         |
+| `6710CMAM11B` | ?                | ?       |         |
+| `6710CMAM12A` | ?                | ?       |         |
 | `6710CMAP01A` | Yes, this repo   | 36 buttons | LX-M240, LX-M245 |
+| `6710CMAQ01A` | ?                | ?       |         |
+| `6710CMAQ02A` | ?                | ?       |         |
 | `6710CMAQ05F` | Yes [[1](https://sourceforge.net/p/lirc/mailman/message/32481685/)] | 37 buttons | FA162 series, FA162A series |
+| `6710CMAQ06A` | ?                | ?       |         |
+| `6710CMAQ06D` | ?                | ?       |         |
 | `6710CMAT01A` | No               | 43 buttons | The most complete remote |
 
 ## [Витязь](http://www.vityas.com) [37CTV-6622-M](https://www.google.com/search?q=37CTV-6622-M&tbm=isch)
