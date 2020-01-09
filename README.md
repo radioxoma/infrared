@@ -7,11 +7,18 @@ Micro Hi-Fi stereo by LG. Discontinued. Manufactured in 2005-01-20. Infrared rem
 Reason of interest - remote uses same codes as all members of remote family "6710CMA" (0x808), so it can control multiple micro Hi-Fi systems.
 
 Facts:
-* Remote '6710CMAP01A' is a part of '6710CMA*' family
+* Remote '6710CMAP01A' is a part of '6710CMA*' family and can cros-control mutiple LG Hi-Fi systems
 * All this remotes has 0x808 or 0x0808 (16 bit) `pre_data`, so you can find all same LIRC config by this string
 * Different models of this remote has different buttons, layout looks the same
 * **Protocol used in this remote supports 256 different codes** (buttons), this project can help you try it all
 * Carrier frequency probably 38.3 kHz - *Audacity > Analyze > Plot Spectrum* shows this peak when recording with 192000 Hz sample rate
+
+| Model         | Config available | Comment |
+| -----------   | :--------------: | ------------- |
+| `6710CMAM09D` | Yes [[1](https://sourceforge.net/p/lirc-remotes/mailman/attachment/90994684-d38f-ce19-6adf-27f4d021467e%40gmail.com/1/), [2](https://gist.github.com/besi/9aa3efe5a5def151420fdfacba21302a)] | 28 buttons|
+| `6710CMAP01A` | This repo        | 36 buttons |
+| `6710CMAQ05F` |                  |
+| `6710CMAT01A` | No               | The most complete remote |
 
 ## [Витязь](http://www.vityas.com) [37CTV-6622-M](https://www.google.com/search?q=37CTV-6622-M&tbm=isch)
 
