@@ -12,6 +12,10 @@ Facts:
 * Different models of this remote has different buttons, layout looks the same
 * **Protocol used in this remote supports 256 different codes** (buttons), this project can help you try it all
 * Carrier frequency probably 38.3 kHz - *Audacity > Analyze > Plot Spectrum* shows this peak when recording with 192000 Hz sample rate
+* On *some* devices *some* buttons are hardware-only (e.g. KEY_CLOCK for LX-M245). Such a puty - chance of automatic clock setup drove me trough all this reverse thing
+* No key to explicitly turn on or off device, KEY_POWER can only toggle current power state. So there is no decent way to change device power state with computer boot/sleep/poweroff
+
+Clickbait table for Google. Why restrict yourself with an specific remote, if you could try all 256 buttons?
 
 | Model         | Config published | Buttons | Comment |
 | :-----------: | :--------------: | --------| ------- |
@@ -29,8 +33,8 @@ Facts:
 | `6710CMAQ01A` | ?                | ?       |         |
 | `6710CMAQ02A` | ?                | ?       |         |
 | `6710CMAQ05F` | Yes [[1](https://sourceforge.net/p/lirc/mailman/message/32481685/)] | 37 buttons | FA162 series, FA162A series |
-| `6710CMAQ06A` | ?                | ?       |         |
-| `6710CMAQ06D` | ?                | ?       |         |
+| `6710CMAQ06A` | ?                | 36         |         |
+| `6710CMAQ06D` | ?                | 39 buttons |         |
 | `6710CMAT01A` | No               | 43 buttons | The most complete remote |
 
 ## [Витязь](http://www.vityas.com) [37CTV-6622-M](https://www.google.com/search?q=37CTV-6622-M&tbm=isch)
