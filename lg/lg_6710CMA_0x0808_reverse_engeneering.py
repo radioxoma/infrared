@@ -36,20 +36,20 @@ stub = (
 sequence = (
     ('KEY_CD',             '0xC03F'),
     ('KEY_AUX',            '0x906F'),
-    ('CD_PLAYPAUSE',       '0x20DF'),
-    ('CD_PREVIOUS',        '0x609F'),
-    ('CD_STOP',            '0xA05F'),
-    ('CD_NEXT',            '0xE01F'),
+    ('KEY_PLAYPAUSE',      '0x20DF'),
+    ('KEY_PREVIOUS',       '0x609F'),
+    ('KEY_STOP',           '0xA05F'),
+    ('KEY_NEXT',           '0xE01F'),
     ('KEY_TAPE',           '0x10EF'),
-    ('DECK_PLAY_BACKWARD', '0x30CF'),
-    ('DECK_PLAY',          '0xB04F'),
-    ('DECK_STOP',          '0x708F'),
+    ('KEY_PLAY_BACKWARD',  '0x30CF'),
+    ('KEY_PLAY',           '0xB04F'),
+    ('KEY_STOP_RECORD',    '0x708F'),
 
     ('SURROUND',           '0xF10E'),
 
-    ('CD_REPEAT',          '0x728D'),
-    ('CD_PROGRAM',         '0xB24D'),
-    ('EQ_PATTERN',         '0x02FD'),
+    ('KEY_MEDIA_REPEAT',   '0x728D'),
+    ('KEY_PROGRAM',        '0xB24D'),
+    ('KEY_EQUAL',          '0x02FD'),
     ('KEY_0',              '0xD22D'),
     ('KEY_1',              '0x827D'),
     ('KEY_2',              '0x42BD'),
@@ -72,11 +72,11 @@ sequence = (
     ('KEY_MUTE',           '0xF807'),
     ('KEY_VOLUMEUP',       '0xE817'),
     ('KEY_VOLUMEDOWN',     '0x6897'),
-    ('KEY_CHANNELDOWN',    '0x48B7'),
     ('KEY_CHANNELUP',      '0xC837'),
-    ('DECK_REWIND',        '0x08F7'),
-    ('DECK_FASTFORWARD',   '0x8877'),
-    ('DECK_RECORD',        '0xA857'),
+    ('KEY_CHANNELDOWN',    '0x48B7'),
+    ('KEY_REWIND',         '0x08F7'),
+    ('KEY_FASTFORWARD',    '0x8877'),
+    ('KEY_RECORD',         '0xA857'),
     ('XDSS',               '0xB847'),
 
     ('? KEY_MODE',         '0xF906'),             # Display mode: change spectrum in the display window
@@ -224,6 +224,7 @@ def create_full_irplus_config():
             # print("{}{}".format(command_swapb, group_swapb))
 
             button = config.createElement('button')
+            button.setAttribute('span', '1')
             if full_cmd in lirc_codes:
                 label_str = lirc_codes[full_cmd]
             else:
@@ -231,7 +232,6 @@ def create_full_irplus_config():
             button.setAttribute('label', label_str)
             button.appendChild(config.createTextNode(
                 '0x808 0x{:04x}'.format(full_cmd)))
-            button.setAttribute('span', '1')
             device.appendChild(button)
 
     xml_str = config.toprettyxml(indent="  ")
