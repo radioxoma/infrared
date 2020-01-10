@@ -83,7 +83,7 @@ sequence = (
 
     ('? KEY_SHUFFLE',      '0x0AF5'),             # Random play
     ('KEY_TUNER',          '0x9A65'),
-    ('? KEY_BRIGHTNESS_CYCLE', '0x08087A85'),     # Turn on/off LED on the front panel (Button Dimmer)
+    ('? KEY_BRIGHTNESS_CYCLE', '0x7A85'),     # Turn on/off LED on the front panel (Button Dimmer)
 
     ('OAO',                '0x5CA3'),
     
