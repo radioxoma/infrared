@@ -89,13 +89,13 @@ sequence = (
 
     ('KEY_TUNER',          '0x9A65'),
 
-    ('? KEY_BRIGHTNESS_CYCLE', '0x7A85'),     # Turn on/off LED on the front panel (Button Dimmer)
+    ('? KEY_BRIGHTNESS_CYCLE', '0x7A85'),         # Turn on/off LED on the front panel (Button Dimmer)
 
     # Group 6
     ('? KEY_RDS',          '0x06F9'),             # Radio Data System
 
     # Group 7
-    ('? KEY_PTY',          '0x8E71'),             # Program TYpe
+    ('? KEY_PTY',          '0x8E71'),             # Program type
 
     ('KEY_INFO',           '0xEE11'),
 
@@ -105,7 +105,13 @@ sequence = (
     # Group 9
     ('? KEY_MODE',         '0xF906'),             # Display mode: change spectrum in the display window
 
-    # Group 10 is empty
+    # Group 10 (may be DVD only)
+    ('? KEY_DOWN',           '0x659A'), 
+    ('? KEY_UP',             '0xE51A'), 
+    ('? KEY_LEFT',           '0x15EA'), 
+    ('? KEY_RIGHT',          '0x956A'), 
+    ('? KEY_OK',             '0x55AA'),           #  Was: enter
+
     # Group 11
     ('? KEY_XTS_PRO',      '0xFD02'),             # eXcellent True Sound Pro
 
