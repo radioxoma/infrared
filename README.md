@@ -23,26 +23,33 @@ Clickbait table for Google. Why restrict yourself with an specific remote, if yo
 
 | Model         | Config published | Buttons    | Comment                  |
 | :-----------: | :--------------: | ---------- | ------------------------ |
-| `6710CMAM01A` | ?                | 25 buttons | Simplest remote          |
-| `6710CMAM03B` | ?                | 31 buttons | "Original remote"        |
-| `6710CMAM03D` | ?                | ?          |                          |
-| `6710CMAM06A` | ?                | ?          |                          |
-| `6710CMAM07A` | ?                | ?          |                          |
-| `6710CMAM08D` | ?                | ?          |                          |
+| `6710CMAM01A` |                  | 25 buttons | Simplest remote          |
+| `6710CMAM03B` |                  | 31 buttons | "Original remote"        |
+| `6710CMAM03D` |                  |            |                          |
+| `6710CMAM06A` |                  |            |                          |
+| `6710CMAM07A` |                  |            |                          |
+| `6710CMAM08D` |                  |            |                          |
 | `6710CMAM09D` | Yes [[1](https://sourceforge.net/p/lirc-remotes/mailman/attachment/90994684-d38f-ce19-6adf-27f4d021467e%40gmail.com/1/), [2](https://gist.github.com/besi/9aa3efe5a5def151420fdfacba21302a)] | 28 buttons | |
-| `6710CMAM11A` | ?                | ?          |                          |
-| `6710CMAM11B` | ?                | ?          |                          |
-| `6710CMAM12A` | ?                | ?          |                          |
+| `6710CMAM11A` |                  |            |                          |
+| `6710CMAM11B` |                  |            |                          |
+| `6710CMAM12A` |                  |            |                          |
 | `6710CMAP01A` | Yes, this repo   | 36 buttons | "Original remote". LX-M240, LX-M245 |
-| `6710CMAQ01A` | ?                | 43 buttons | "Original remote". Most complete remote |
-| `6710CMAQ02A` | ?                | ?          |                          |
-| `6710CMAQ05B` | ?                | ?          |                          |
+| `6710CMAQ01A` |                  | 43 buttons | "Original remote". Most complete remote |
+| `6710CMAQ02A` |                  |            |                          |
+| `6710CMAQ05B` |                  |            |                          |
 | `6710CMAQ05F` | Yes [[1](https://sourceforge.net/p/lirc/mailman/message/32481685/)] | 37 buttons | FA162 series, FA162A series |
-| `6710CMAQ05K` | ?                | ?          |                          |
-| `6710CMAQ06A` | ?                | 36 buttons | "Original remote"        |
-| `6710CMAQ06D` | ?                | 39 buttons |                          |
+| `6710CMAQ05K` |                  |            |                          |
+| `6710CMAQ06A` |                  | 36 buttons | "Original remote"        |
+| `6710CMAQ06D` |                  | 39 buttons |                          |
 | `6710CMAT01A` | No               | 43 buttons | Most complete remote     |
 
+### Simplest howto for an Android phone
+
+1. Install [irplus](https://play.google.com/store/apps/developer?id=binarymode&hl=en) (bult-in IR-blaster) or [irplus WAVE](https://play.google.com/store/apps/details?id=net.binarymode.android.irpluswave&hl=en) ([DIY audio jack IR-blaster](https://irplus-remote.github.io/#audio))
+2. Import XML-config in it:
+    * `lg/6710CMAP01A.irplus.xml` - small and just enough for a home user
+    * [`lg/lg_6710CMA_0x0808_full_irplus_config.xml`](https://github.com/radioxoma/infrared/blob/master/lg/lg_6710CMA_0x0808_full_irplus_config.xml) - full 256 buttons for research
+3. If you had discovered buttons which not in a list, please create issue and tell me
 
 ## [Витязь](http://www.vityas.com) [37CTV-6622-M](https://www.google.com/search?q=37CTV-6622-M&tbm=isch)
 
