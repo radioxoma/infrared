@@ -1,5 +1,6 @@
 This repo contains my LIRC and Irplus configs. Better late, than never.
 
+* Consider LIRC *.lircd.conf* files as primary. Other configs have been converted from it.
 * On PC or ARM board use [LIRC](http://www.lirc.org/) or [WinLIRC](http://winlirc.sourceforge.net/)
 * For Android devices [use](https://irplus-remote.github.io/) freeware [irplus](https://play.google.com/store/apps/developer?id=binarymode&hl=en) with or without infrared blaster
 * In old days LIRC configs used to be [converted](http://hardwarefetish.com/588-reconstruction-of-irremote-psiloc-com-psiloc-irremote) to *Psiloc irRemote* format and been used on Symbian device like Nokia E71
