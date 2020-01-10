@@ -167,11 +167,11 @@
     <button span="1" label="10  3">0x808 0xc53a</button>
     <button span="1" label="10  4">0x808 0x25da</button>
     <button span="1" label="10  5">0x808 0xa55a</button>
-    <button span="1" label="10  6">0x808 0x659a</button>
-    <button span="1" label="10  7">0x808 0xe51a</button>
-    <button span="1" label="10  8">0x808 0x15ea</button>
-    <button span="1" label="10  9">0x808 0x956a</button>
-    <button span="1" label="10 10">0x808 0x55aa</button>
+    <button span="1" label="10  6 ? KEY_DOWN">0x808 0x659a</button>
+    <button span="1" label="10  7 ? KEY_UP">0x808 0xe51a</button>
+    <button span="1" label="10  8 ? KEY_LEFT">0x808 0x15ea</button>
+    <button span="1" label="10  9 ? KEY_RIGHT">0x808 0x956a</button>
+    <button span="1" label="10 10 ? KEY_OK">0x808 0x55aa</button>
     <button span="1" label="10 11">0x808 0xd52a</button>
     <button span="1" label="10 12">0x808 0x35ca</button>
     <button span="1" label="10 13">0x808 0xb54a</button>
