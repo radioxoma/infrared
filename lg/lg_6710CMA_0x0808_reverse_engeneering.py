@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 
 """
-Create LG remote config with all possible buttons.
+Create infrared remote config for LG Hi-Fi system with all possible buttons.
 
-Config can be inported in "Irplus" freeware.
+Config can be inported in freeware "Irplus".
     https://irplus-remote.github.io/
     https://play.google.com/store/apps/details?id=net.binarymode.android.irplus
 
-irplus неверно обрабатывает нажатие кнопки: вместо отправки сигнала повторения он отправляет кнопку снова
+irplus incorrectly processes button hold: instead sending "repeat" signal
+it sends full command again
 """
 
 from xml.dom import minidom
@@ -121,8 +122,7 @@ def append_inverted(cmd):
 def read_config():
     """Read part of an LG remote LIRC config and print it in reverse-engeneered form.
 
-    Если заменить биты местами, то тогда последовательность кнопок 1, 2, 3 etc
-    имеет смысл.
+    If bits swapped, then buttons sequence "1, 2, 3, ..." make sense.
 
     KEY_1 65
     KEY_2 66
@@ -138,7 +138,7 @@ def read_config():
 
     ***
 
-    NEC corporation protocol? Может быть format="WINLIRC_NEC1"?
+    NEC corporation protocol? May be format="WINLIRC_NEC1"?
     1 - большие паузы между горением светодиода
     0 - малые паузы между горением светодиода
 
@@ -148,11 +148,11 @@ def read_config():
         8 bit of address 0x08
         8 bit of address (repeat 0x08 with no modification)
         8 bit of command:
-            4 bit - собственно команда, например клавиша 1 "0x1000"
-            4 bit - вероятно указание на группу функций, например "Цифровые клавиши", "Старт-стоп"
-        8 bit of logical inverce of command (в противофазе)
+            4 bit - the button itself, e.g. KEY_ONE "0x1000"
+            4 bit - like function group (numpad, CD, tape)
+        8 bit of logical inverse of the command
 
-    Если swap четыре бита из cmd, то получится цифра.
+    Swapping four bits from cmd, gives number.
 
     / addr 0x0808 \\/ cmd \\/ inv \\
     0000100000001000        ~~~~~~~~
@@ -169,7 +169,7 @@ def read_config():
                     1000 8
     """
     def build_bytearray(command, address=0x08):
-        """Build 32-bit (4 byte) sequense from LIRC file.
+        """Build 32-bit (4 byte) sequence from LIRC file.
 
         :command: is 1 byte int
         """
@@ -202,6 +202,8 @@ def read_config():
 
 def create_full_irplus_config():
     """Creates irplus XML config with all possible 256 keys.
+
+    https://play.google.com/store/apps/details?id=net.binarymode.android.irplus
     """
     lirc_codes = dict((int(c, 16), l) for l, c in sequence)
 
@@ -222,13 +224,14 @@ def create_full_irplus_config():
             # print("{}{}".format(command_swapb, group_swapb))
 
             button = config.createElement('button')
-            button.setAttribute('span', '1')
             if full_cmd in lirc_codes:
                 label_str = lirc_codes[full_cmd]
             else:
                 label_str = "{:2.0f} {:2.0f}".format(group, command)
             button.setAttribute('label', label_str)
-            button.appendChild(config.createTextNode('0x808 0x{:04x}'.format(full_cmd)))
+            button.appendChild(config.createTextNode(
+                '0x808 0x{:04x}'.format(full_cmd)))
+            button.setAttribute('span', '1')
             device.appendChild(button)
 
     xml_str = config.toprettyxml(indent="  ")
