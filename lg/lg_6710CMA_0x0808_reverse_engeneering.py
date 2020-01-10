@@ -13,7 +13,6 @@ it sends full command again
 
 from xml.dom import minidom
 
-
 stub = (
     ('manufacturer',   'LG'),
     ('model',          'reverse_config_0x0808'),
@@ -32,25 +31,44 @@ stub = (
     ('header-pulse',   '4498'),
     ('header-space',   '4453'))
 
-
+# Grouped and sequenced one by one according to binary representation
 sequence = (
+    # Group 0
     ('KEY_CD',             '0xC03F'),
-    ('KEY_AUX',            '0x906F'),
     ('KEY_PLAYPAUSE',      '0x20DF'),
-    ('KEY_PREVIOUS',       '0x609F'),
     ('KEY_STOP',           '0xA05F'),
+    ('KEY_PREVIOUS',       '0x609F'),
     ('KEY_NEXT',           '0xE01F'),
     ('KEY_TAPE',           '0x10EF'),
+    ('KEY_AUX',            '0x906F'),
+
     ('KEY_PLAY_BACKWARD',  '0x30CF'),
     ('KEY_PLAY',           '0xB04F'),
     ('KEY_STOP_RECORD',    '0x708F'),
 
-    ('SURROUND',           '0xF10E'),
+    # Group 1
+    ('KEY_REWIND',         '0x08F7'),
+    ('KEY_FASTFORWARD',    '0x8877'),
+    ('KEY_CHANNELDOWN',    '0x48B7'),
+    ('KEY_CHANNELUP',      '0xC837'),
 
-    ('KEY_MEDIA_REPEAT',   '0x728D'),
-    ('KEY_PROGRAM',        '0xB24D'),
+    ('KEY_RECORD',         '0xA857'),
+    ('KEY_VOLUMEDOWN',     '0x6897'),
+    ('KEY_VOLUMEUP',       '0xE817'),
+
+    ('XDSS',               '0xB847'),
+    ('KEY_POWER',          '0x7887'),
+    ('KEY_MUTE',           '0xF807'),
+
+    # Group 2 is empty
+
+    # Group 3
+    ('? KEY_PTY_SEARCH',   '0x9C63'),             # Program TYpe Search
+    ('OAO',                '0x5CA3'),
+    ('? KEY_USB',          '0xDC23'),             # Play MP3 files from USB key
+
+    # Group 4
     ('KEY_EQUAL',          '0x02FD'),
-    ('KEY_0',              '0xD22D'),
     ('KEY_1',              '0x827D'),
     ('KEY_2',              '0x42BD'),
     ('KEY_3',              '0xC23D'),
@@ -61,38 +79,44 @@ sequence = (
     ('KEY_8',              '0x12ED'),
     ('KEY_9',              '0x926D'),
     ('? KEY_DSKIP',        '0x52AD'),             # No idea what it does
+    ('KEY_0',              '0xD22D'),
 
-    ('KEY_SLEEP',          '0x43BC'),
-    ('? KEY_FUNCTION',     '0x33CC'),             # Cycle through CD/USB/Tuner/Aux modes
-    ('? KEY_CLOCK',        '0x837C'),             # Set time
+    ('KEY_PROGRAM',        '0xB24D'),
+    ('KEY_MEDIA_REPEAT',   '0x728D'),
 
-    ('? KEY_RDS',          '0x06F9'),             # Radio Data System
-
-    ('KEY_POWER',          '0x7887'),
-    ('KEY_MUTE',           '0xF807'),
-    ('KEY_VOLUMEUP',       '0xE817'),
-    ('KEY_VOLUMEDOWN',     '0x6897'),
-    ('KEY_CHANNELUP',      '0xC837'),
-    ('KEY_CHANNELDOWN',    '0x48B7'),
-    ('KEY_REWIND',         '0x08F7'),
-    ('KEY_FASTFORWARD',    '0x8877'),
-    ('KEY_RECORD',         '0xA857'),
-    ('XDSS',               '0xB847'),
-
-    ('? KEY_MODE',         '0xF906'),             # Display mode: change spectrum in the display window
-
+    # Group 5
     ('? KEY_SHUFFLE',      '0x0AF5'),             # Random play
+
     ('KEY_TUNER',          '0x9A65'),
+
     ('? KEY_BRIGHTNESS_CYCLE', '0x7A85'),     # Turn on/off LED on the front panel (Button Dimmer)
 
-    ('OAO',                '0x5CA3'),
-    
-    ('? KEY_USB',          '0xDC23'),             # Play MP3 files from USB key
-    ('? KEY_PTY_SEARCH',   '0x9C63'),             # Program TYpe Search
-    ('? KEY_XTS_PRO',      '0xFD02'),             # eXcellent True Sound Pro
+    # Group 6
+    ('? KEY_RDS',          '0x06F9'),             # Radio Data System
+
+    # Group 7
+    ('? KEY_PTY',          '0x8E71'),             # Program TYpe
 
     ('KEY_INFO',           '0xEE11'),
-    ('? KEY_PTY',          '0x8E71'),             # Program TYpe
+
+    # Group 8
+    ('SURROUND',           '0xF10E'),
+
+    # Group 9
+    ('? KEY_MODE',         '0xF906'),             # Display mode: change spectrum in the display window
+
+    # Group 10 is empty
+    # Group 11
+    ('? KEY_XTS_PRO',      '0xFD02'),             # eXcellent True Sound Pro
+
+    # Group 12
+    ('? KEY_CLOCK',        '0x837C'),             # Set time
+
+    ('KEY_SLEEP',          '0x43BC'),
+
+    ('? KEY_FUNCTION',     '0x33CC'),             # Cycle through CD/USB/Tuner/Aux modes
+
+    # Groups 13, 14, 15 are empty
 )
 
 
@@ -226,7 +250,7 @@ def create_full_irplus_config():
             button = config.createElement('button')
             button.setAttribute('span', '1')
             if full_cmd in lirc_codes:
-                label_str = lirc_codes[full_cmd]
+                label_str = "{:2.0f} {:2.0f}".format(group, command) + " " + lirc_codes[full_cmd]
             else:
                 label_str = "{:2.0f} {:2.0f}".format(group, command)
             button.setAttribute('label', label_str)
